@@ -24,11 +24,6 @@ class Locators:
     autorization_button = './/button' #Кнопка "Войти" на странице входа
 
     #Разделы конструктора
-    constructor_section_breads = ".//div/main/section[1]/div[1]/div[1]" #".//section[@class='BurgerIngredients_ingredients__1N8v2']//div[1]" # Раздел "Булки" в констуркторе
-    constructor_section_sauce = ".//section[@class='BurgerIngredients_ingredients__1N8v2']//div[2]" # Раздел "Соус" в констуркторе
-    constructor_section_filling = ".//section[@class='BurgerIngredients_ingredients__1N8v2']//div[3]"  # Раздел "Начинка" в констуркторе
-
-    #sauce_name = ".//ul[@class='BurgerIngredients_ingredients__list__2A-mT']/a[@class='BurgerIngredient_ingredient__1TVf6 ml-4 mr-4 mb-8']//p[text()='Соус с шипами Антарианского плоскоходца']"
-    bread_name = ".//section[1]/div[2]/ul[1]/a[1]/p"
-
-    #Вход в ЛК
+    constructor_section_breads = ".//span[text()='Булки']/parent::div" #".//div/main/section[1]/div[1]/div[1]" # Раздел "Булки" в констуркторе
+    constructor_section_sauce = ".//span[text()='Соусы']/parent::div" # Раздел "Соус" в констуркторе
+    constructor_section_filling = ".//span[text()='Начинки']/parent::div"  # Раздел "Начинка" в констуркторе

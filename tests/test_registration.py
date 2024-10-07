@@ -4,9 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 from locators import Locators
 
-@pytest.mark.usefixtures('setup_driver')
 class TestRegistration:
-
     def test_registration_true(self):
         driver = webdriver.Chrome()
         driver.get("https://stellarburgers.nomoreparties.site/register")

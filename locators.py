@@ -15,8 +15,10 @@ class Locators:
     text_in_cabinet = ".//p[text()='В этом разделе вы можете изменить свои персональные данные']" #Текст для проверки отображения лк
     button_logout = ".//button[text()='Выход']" #Кнопка выхода из лк
     text_in_log_in = ".//h2" #Текст "Вход" на странице входа
-    header_logo = ".//div/a" #
-    header_constructor = ".//a" #
+    header_logo = ".//div/a" #Лого сайта в хедере
+    header_constructor = ".//a" # Кнопка "Конструктор" в хедере
+    enter_link_registration = ".//a[text()='Зарегистрироваться']" #Ссылка Зарегистрироваться на странице входа
+    enter_forgot_password = ".//a[text()='Восстановить пароль']" #Ссылка "Восстановить паоль" на стрранице входа
 
 
     autorization_email = ".//input[@name='name']" #Поле для ввода емайл на странице входа
@@ -24,6 +26,6 @@ class Locators:
     autorization_button = './/button' #Кнопка "Войти" на странице входа
 
     #Разделы конструктора
-    constructor_section_breads = ".//span[text()='Булки']/parent::div" #".//div/main/section[1]/div[1]/div[1]" # Раздел "Булки" в констуркторе
+    constructor_section_breads = ".//span[text()='Булки']/parent::div" # Раздел "Булки" в констуркторе
     constructor_section_sauce = ".//span[text()='Соусы']/parent::div" # Раздел "Соус" в констуркторе
     constructor_section_filling = ".//span[text()='Начинки']/parent::div"  # Раздел "Начинка" в констуркторе

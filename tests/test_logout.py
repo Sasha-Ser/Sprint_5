@@ -5,7 +5,6 @@ from selenium.webdriver.support import expected_conditions
 from locators import Locators
 import pytest
 
-@pytest.mark.usefixtures('authorization')
 class TestLogout:
 
     def test_logout_through_button_in_cabinet_true(self, authorization):
@@ -14,4 +13,3 @@ class TestLogout:
             (By.XPATH, Locators.text_in_log_in)))
 
         assert authorization.current_url == 'https://stellarburgers.nomoreparties.site/login'
-        authorization.quit()

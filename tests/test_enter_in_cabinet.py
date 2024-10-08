@@ -6,6 +6,6 @@ from locators import Locators
 import pytest
 
 class TestEnterInCabinet:
-    @pytest.mark.usefixtures('setup_driver', 'authorization')
-    def test_enter_cabinet_true(self, setup_driver, authorization):
+
+    def test_enter_cabinet_true(self, authorization):
         assert authorization.current_url == 'https://stellarburgers.nomoreparties.site/account/profile'
